@@ -7,6 +7,7 @@ Postagem referente aos exercícios:
 
 2) [Ar Condicionado com o padrão Observer](https://github.com/gabrielapontesb/Observer)
 
+
 Há um grande confusão entre a definição de BDD e TDD. Antes da realização desses exercícios, confesso que passei nas matérias e continuei sem entender realmente o real significado delas. Por isso, vale a pena primeiro entender o conceito de cada uma e definir onde eles se encaixam.
 
 
@@ -21,15 +22,20 @@ Esses testes são escritos por meio de features e possuem uma linguagem acessív
 **Feature:** Calcular imposto de renda
 	
 **Scenario:** Calcular imposto de acordo com a categoria
-	**Given** O meu salario eh 2000
-	**When** Eu quero calcular o imposto de renda
-	**Then** Eu vou pagar 150 reais de imposto
+
+	Given O meu salario eh 2000
+	
+	When Eu quero calcular o imposto de renda
+	
+	Then Eu vou pagar 150 reais de imposto
+   
    
 Depois de escritas, as features são transformadas em código pelos desenvolvedores. Nestes exercícios foi utilizado o Cucumber, um framework que auxilia na implementação das features. Ele gera automaticamente o cabeçalho das funções que precisam ser implementadas para rodar os testes.
 
+
 **Resultado do Cucumber**
 
-*You can implement missing steps with the snippets below:
+You can implement missing steps with the snippets below:
 
 
 @Given("^O meu salario eh (\\d+)$")
