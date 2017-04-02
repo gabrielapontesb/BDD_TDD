@@ -19,15 +19,12 @@ Já o BDD *(Behaviour Driven Development)*  visa integrar regras de negócios co
 
 Esses testes são escritos por meio de features e possuem uma linguagem acessível a qualquer pessoa, principalmente aquelas que não desenvolvem. Exemplo:
 
-**Feature:** Calcular imposto de renda
+	**Feature:** Calcular imposto de renda
 	
-**Scenario:** Calcular imposto de acordo com a categoria
-
-	Given O meu salario eh 2000
-	
-	When Eu quero calcular o imposto de renda
-	
-	Then Eu vou pagar 150 reais de imposto
+	**Scenario:** Calcular imposto de acordo com a categoria
+		**Given** O meu salario eh 2000
+		**When** Eu quero calcular o imposto de renda
+		**Then** Eu vou pagar 150 reais de imposto
    
    
 Depois de escritas, as features são transformadas em código pelos desenvolvedores. Nestes exercícios foi utilizado o Cucumber, um framework que auxilia na implementação das features. Ele gera automaticamente o cabeçalho das funções que precisam ser implementadas para rodar os testes.
@@ -35,29 +32,20 @@ Depois de escritas, as features são transformadas em código pelos desenvolvedo
 
 **Resultado do Cucumber**
 
-You can implement missing steps with the snippets below:
+	You can implement missing steps with the snippets below:
+
+	@Given("^O meu salario eh (\\d+)$")
+	public void o_meu_salario_eh(int arg1) throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+		throw new PendingException();
+	}
 
 
-@Given("^O meu salario eh (\\d+)$")
-
-public void o_meu_salario_eh(int arg1) throws Throwable {
-	
-	// Write code here that turns the phrase above into concrete actions
-	
-	throw new PendingException();
-	
-}
-
-
-@Then("^Eu vou pagar (\\d+) reais$")
-
-public void eu_vou_pagar_reais(int arg1) throws Throwable {
-
-	// Write code here that turns the phrase above into concrete actions
-	
-	throw new PendingException();
-	
-}
+	@Then("^Eu vou pagar (\\d+) reais$")
+	public void eu_vou_pagar_reais(int arg1) throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+		throw new PendingException();
+	}
 
 A responsabilidade de implementação agora é do desenvolvedor, que deve fazer primeiro com que o teste falhe e depois que ele passe. Isso para garantir que a implementação dos testes esteja funcionando.
 
