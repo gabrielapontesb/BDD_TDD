@@ -1,11 +1,12 @@
 ## Padrões de projeto com BDD e TDD
 
 
+
 Postagem referente aos exercícios:
 
 1) [Imposto de Renda com o padrão Strategy](https://github.com/gabrielapontesb/Strategy)
-
 2) [Ar Condicionado com o padrão Observer](https://github.com/gabrielapontesb/Observer)
+
 
 
 Há um grande confusão entre a definição de BDD e TDD. Antes da realização desses exercícios, confesso que passei nas matérias e continuei sem entender realmente o real significado delas. Por isso, vale a pena primeiro entender o conceito de cada uma e definir onde eles se encaixam.
@@ -19,12 +20,12 @@ Já o BDD *(Behaviour Driven Development)*  visa integrar regras de negócios co
 
 Esses testes são escritos por meio de features e possuem uma linguagem acessível a qualquer pessoa, principalmente aquelas que não desenvolvem. Exemplo:
 
-	**Feature:** Calcular imposto de renda
+	Feature: Calcular imposto de renda
 	
-	**Scenario:** Calcular imposto de acordo com a categoria
-		**Given** O meu salario eh 2000
-		**When** Eu quero calcular o imposto de renda
-		**Then** Eu vou pagar 150 reais de imposto
+	Scenario: Calcular imposto de acordo com a categoria
+		Given O meu salario eh 2000
+		When Eu quero calcular o imposto de renda
+		Then Eu vou pagar 150 reais de imposto
    
    
 Depois de escritas, as features são transformadas em código pelos desenvolvedores. Nestes exercícios foi utilizado o Cucumber, um framework que auxilia na implementação das features. Ele gera automaticamente o cabeçalho das funções que precisam ser implementadas para rodar os testes.
@@ -47,6 +48,8 @@ Depois de escritas, as features são transformadas em código pelos desenvolvedo
 		throw new PendingException();
 	}
 
+
 A responsabilidade de implementação agora é do desenvolvedor, que deve fazer primeiro com que o teste falhe e depois que ele passe. Isso para garantir que a implementação dos testes esteja funcionando.
+
 
 Depois de resolver os exercícios e pesquisar sobre os significados, finalmente ficou entendido o passo a passo sobre BDD e TDD. Espero que esteja mais claro para você, assim como está para mim. Lembrando que é possível conferir o código nos links acima :)
