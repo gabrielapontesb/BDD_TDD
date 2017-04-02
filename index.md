@@ -5,6 +5,7 @@
 Postagem referente aos exercícios:
 
 1) [Imposto de Renda com o padrão Strategy](https://github.com/gabrielapontesb/Strategy)
+
 2) [Ar Condicionado com o padrão Observer](https://github.com/gabrielapontesb/Observer)
 
 
